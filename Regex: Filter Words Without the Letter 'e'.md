@@ -14,7 +14,26 @@ To write a Python program that filters out and returns all elements from a list 
 5. Print the final filtered list.
 
 ## 🧾 Program
-Add code here
+
+import re
+
+# Input list
+n = int(input("Enter number of elements: "))
+lst = []
+
+for i in range(n):
+    word = input("Enter element: ")
+    lst.append(word)
+
+# Filter elements that do NOT contain 'e'
+result = []
+for item in lst:
+    if not re.search('e', item):
+        result.append(item)
+
+print("Filtered list:", result)
+
 ## Output
+<img width="1917" height="968" alt="image" src="https://github.com/user-attachments/assets/7e6d0f2c-4834-424f-b7f4-6fe10920d63a" />
 
 ## Result
